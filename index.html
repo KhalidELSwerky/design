@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA // Haute Interior Architecture & Design Studio</title>
+    <meta name="description" content="AURA is an award-winning luxury interior design studio crafting timeless, sophisticated, and bespoke environments for discerning clients worldwide.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AURA // Haute Interior Architecture & Design Studio">
+    <meta property="og:description" content="Crafting timeless, sophisticated, and bespoke environments for discerning clients.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InteriorDesignBusiness",
+      "name": "AURA Studio",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "priceRange": "$$$$",
+      "telephone": "+1-800-555-AURA",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "450 Park Avenue, Suite 2800",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10022",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-barba="wrapper">
+
+    <!-- Custom Luxury Cursor -->
+    <div class="luxury-cursor"></div>
+    <div class="luxury-cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <h1 class="loader-logo">A U R A</h1>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+            <span class="loader-percentage">0%</span>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">A U R A</a>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <a href="#contact" class="btn-primary-outline">Book Consultation</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Floating Social Icons -->
+    <div class="floating-socials">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Main Content Container (Locomotive Scroll) -->
+    <div id="main-container" data-scroll-container>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section" data-scroll-section>
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=90');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content" data-scroll data-scroll-speed="2">
+                <span class="sub-heading fade-up">Haute Interior Architecture</span>
+                <h1 class="hero-title fade-up">Designing Timeless<br>Luxury Interiors</h1>
+                <p class="hero-subtitle fade-up">Bespoke spatial design engineered for uncompromising elegance and modern sophistication.</p>
+                <div class="hero-cta fade-up">
+                    <a href="#portfolio" class="btn-gold">Explore Portfolio</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section section-padding" data-scroll-section>
+            <div class="container grid-2">
+                <div class="about-image-wrapper" data-scroll data-scroll-speed="0.5">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="Interior Designer Workspace" class="img-reveal">
+                    <div class="experience-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Years of Mastery</span>
+                    </div>
+                </div>
+                <div class="about-content" data-scroll data-scroll-speed="1">
+                    <span class="section-tag">The Philosophy</span>
+                    <h2>Where Architecture Meets Pure Artistry</h2>
+                    <p class="lead-text">Founded on the principle that luxury is defined by detail, comfort, and uncompromising aesthetic clarity, AURA curates environments that reflect your highest aspirations.</p>
+                    <div class="mission-vision-grid">
+                        <div class="mv-box">
+                            <h4>Our Mission</h4>
+                            <p>To redefine elite residential and commercial spaces through innovative spatial planning, exquisite material pairings, and timeless curation.</p>
+                        </div>
+                        <div class="mv-box">
+                            <h4>Our Vision</h4>
+                            <p>To remain the premier global standard in luxury interior architecture, crafting sanctuaries of prestige and serenity.</p>
+                        </div>
+                    </div>
+                    <!-- Animated Counters -->
+                    <div class="counters-grid">
+                        <div class="counter-item">
+                            <span class="counter" data-target="250">0</span>+
+                            <span class="counter-label">Projects Completed</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter" data-target="180">0</span>+
+                            <span class="counter-label">Happy Clients</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter" data-target="35">0</span>
+                            <span class="counter-label">Global Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services-section section-padding bg-alt" data-scroll-section>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Curated Offerings</span>
+                    <h2>Our Signature Services</h2>
+                    <p class="section-desc">Comprehensive design and architectural execution tailored for ultra-high-net-worth residences and flagship commercial spaces.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+                        <h3>Luxury Residential Design</h3>
+                        <p>Complete interior architecture and custom styling for high-end private estates, penthouses, and villas.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3>Commercial Design</h3>
+                        <p>Sophisticated spatial design for luxury boutiques, hospitality suites, and corporate headquarters.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-couch"></i></div>
+                        <h3>Office Design</h3>
+                        <p>Ergonomic yet breathtaking executive boardrooms and modern workspaces designed for ultimate productivity.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <h3>Space Planning</h3>
+                        <p>Flawless architectural flow optimization ensuring spatial harmony and intuitive movement throughout.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-chair"></i></div>
+                        <h3>Furniture Selection</h3>
+                        <p>Exclusive access to bespoke international ateliers, custom millwork, and rare designer pieces.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Lighting Design</h3>
+                        <p>Layered architectural lighting schemes engineered to sculpt spaces and evoke cinematic emotion.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-hammer"></i></div>
+                        <h3>Full Renovation</h3>
+                        <p>Turnkey structural remodeling managed from concept inception to immaculate white-glove handover.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="service-card" data-tilt>
+                        <div class="service-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                        <h3>3D Visualization</h3>
+                        <p>Photorealistic hyper-detailed rendering and immersive virtual reality walkthroughs prior to build.</p>
+                        <a href="#contact" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio-section section-padding" data-scroll-section>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Selected Works</span>
+                    <h2>The Portfolio</h2>
+                    <p class="section-desc">Explore our signature projects defining global luxury interior design.</p>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="modern">Modern</button>
+                    <button class="filter-btn" data-filter="classic">Classic</button>
+                    <button class="filter-btn" data-filter="minimal">Minimal</button>
+                </div>
+                <!-- Masonry Grid -->
+                <div class="portfolio-masonry">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item" data-category="residential modern" data-project-id="1">
+                        <div class="portfolio-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" alt="Penthouse Oasis">
+                            <div class="portfolio-overlay">
+                                <span class="p-category">Residential / Modern</span>
+                                <h3>The Manhattan Sky Penthouse</h3>
+                                <button class="btn-view">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="portfolio-item" data-category="commercial minimal" data-project-id="2">
+                        <div class="portfolio-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Minimalist Flagship">
+                            <div class="portfolio-overlay">
+                                <span class="p-category">Commercial / Minimal</span>
+                                <h3>Aether Haute Horlogerie</h3>
+                                <button class="btn-view">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="portfolio-item" data-category="residential classic" data-project-id="3">
+                        <div class="portfolio-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Classic Estate">
+                            <div class="portfolio-overlay">
+                                <span class="p-category">Residential / Classic</span>
+                                <h3>The Kensington Manor</h3>
+                                <button class="btn-view">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="portfolio-item" data-category="commercial modern" data-project-id="4">
+                        <div class="portfolio-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="Corporate HQ">
+                            <div class="portfolio-overlay">
+                                <span class="p-category">Commercial / Modern</span>
+                                <h3>Vanguard Global Headquarters</h3>
+                                <button class="btn-view">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="portfolio-item" data-category="residential minimal" data-project-id="5">
+                        <div class="portfolio-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1000&q=80" alt="Minimal Villa">
+                            <div class="portfolio-overlay">
+                                <span class="p-category">Residential / Minimal</span>
+                                <h3>Kyoto Zen Sanctuary</h3>
+                                <button class="btn-view">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="portfolio-item" data-category="residential classic" data-project-id="6">
+                        <div class="portfolio-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Riviera Villa">
+                            <div class="portfolio-overlay">
+                                <span class="p-category">Residential / Classic</span>
+                                <h3>Villa Saint-Jean-Cap-Ferrat</h3>
+                                <button class="btn-view">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section id="why-us" class="why-us-section section-padding bg-alt" data-scroll-section>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">The AURA Difference</span>
+                    <h2>Why Partner With Us</h2>
+                    <p class="section-desc">Uncompromising standards, peerless execution, and absolute discretion.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3>Creative Design</h3>
+                        <p>Original, bespoke concepts customized entirely to your narrative and lifestyle.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-glasses"></i></div>
+                        <h3>Attention to Detail</h3>
+                        <p>Meticulous curation of textures, acoustics, custom hardware, and lighting.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-gem"></i></div>
+                        <h3>Luxury Finishes</h3>
+                        <p>Sourcing rare marbles, exotic woods, and bespoke artisan textiles worldwide.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        <h3>On-Time Delivery</h3>
+                        <p>Strict project governance and white-glove logistical scheduling without delays.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>Professional Team</h3>
+                        <p>World-class architects, interior designers, and elite craftspeople at your service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process" class="process-section section-padding" data-scroll-section>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Methodology</span>
+                    <h2>Our Design Journey</h2>
+                    <p class="section-desc">A refined 5-step collaborative journey from initial vision to final unveiling.</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Consultation</h3>
+                            <p>An intimate dialogue to understand your lifestyle, aesthetic preferences, spatial requirements, and investment targets.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Concept</h3>
+                            <p>Development of mood boards, architectural sketches, spatial layouts, and initial material direction.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Design</h3>
+                            <p>Photorealistic 3D renders, precise CAD blueprints, and final material selection walkthroughs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Execution</h3>
+                            <p>Rigorous site supervision, custom fabrication, artisanal millwork, and quality control management.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3>Delivery</h3>
+                            <p>White-glove styling, final deep cleaning, and the official grand unveiling of your new sanctuary.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials" class="testimonials-section section-padding bg-alt" data-scroll-section>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Client Acclaim</span>
+                    <h2>Words From Our Patrons</h2>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="t-quote">"AURA transformed our Manhattan penthouse into an absolute masterpiece. Their attention to detail and ability to merge warmth with ultra-luxury is unparalleled."</p>
+                            <div class="t-author">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Client">
+                                <div>
+                                    <h4>Victoria Sterling</h4>
+                                    <span>Private Collector, New York</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="t-quote">"Working with AURA on our boutique hotel interior was seamless. They delivered ahead of schedule and the aesthetic impact on our guests has been phenomenal."</p>
+                            <div class="t-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Client">
+                                <div>
+                                    <h4>Marcus Vance</h4>
+                                    <span>Hotelier, Geneva</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="t-quote">"Absolute perfection. The bespoke furniture curation and lighting design completely redefined how we experience our home."</p>
+                            <div class="t-author">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Client">
+                                <div>
+                                    <h4>Lady Alistair</h4>
+                                    <span>Estate Owner, London</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button id="prev-testimonial" aria-label="Previous Slide"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="next-testimonial" aria-label="Next Slide"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRANDS SECTION -->
+        <section class="brands-section section-padding" data-scroll-section>
+            <div class="container">
+                <p class="brands-title">Featured In & Trusted By Elite Publications</p>
+                <div class="brands-grid">
+                    <span class="brand-item">ARCHITECTURAL DIGEST</span>
+                    <span class="brand-item">ELLE DECOR</span>
+                    <span class="brand-item">VOGUE LIVING</span>
+                    <span class="brand-item">WALLPAPER*</span>
+                    <span class="brand-item">ROBB REPORT</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section section-padding" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=90');" data-scroll-section>
+            <div class="cta-overlay"></div>
+            <div class="container text-center relative z-10">
+                <span class="sub-heading">Begin Your Transformation</span>
+                <h2 class="cta-title">Let's Create Something Beautiful</h2>
+                <a href="#contact" class="btn-gold">Book Consultation</a>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding" data-scroll-section>
+            <div class="container">
+                <div class="grid-2">
+                    <div class="contact-info">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2>Initiate Your Project</h2>
+                        <p>We invite you to schedule a private consultation at our studio or on-site to discuss your upcoming vision.</p>
+                        <div class="contact-details">
+                            <div class="cd-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Headquarters</h4>
+                                    <p>450 Park Avenue, Suite 2800, New York, NY 10022</p>
+                                </div>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Direct Line</h4>
+                                    <p>+1 (800) 555-AURA</p>
+                                </div>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Inquiries</h4>
+                                    <p>concierge@aurastudio.com</p>
+                                </div>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>Monday — Friday: 9:00 AM – 7:00 PM EST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Luxury Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="luxury-form" class="luxury-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Full Name *</label>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="email" id="email" required placeholder=" ">
+                                    <label for="email">Email Address *</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" required placeholder=" ">
+                                    <label for="phone">Phone Number *</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <select id="project-type" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="residential">Luxury Residential</option>
+                                        <option value="commercial">Commercial Design</option>
+                                        <option value="office">Office Design</option>
+                                        <option value="renovation">Full Renovation</option>
+                                    </select>
+                                    <label for="project-type">Project Type *</label>
+                                </div>
+                                <div class="form-group">
+                                    <select id="budget" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="50k-100k">$50,000 - $100,000</option>
+                                        <option value="100k-250k">$100,000 - $250,000</option>
+                                        <option value="250k-500k">$250,000 - $500,000</option>
+                                        <option value="500k+">$500,000+</option>
+                                    </select>
+                                    <label for="budget">Investment Budget *</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Project Vision & Details *</label>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Embedded Map -->
+                <div class="map-container">
+                    <iframe title="Studio Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2176767755716!2d-73.97322962347915!3d40.7607593353594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe53347bf9%3A0x6b107e33527b14d2!2s450%20Park%20Ave%2C%20New%20York%2C%20NY%2010022%2C%20USA!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <a href="#" class="logo">A U R A</a>
+                        <p>Haute Interior Architecture & Bespoke Design Studio crafting uncompromising luxury spaces globally.</p>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About Studio</a></li>
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#portfolio">Selected Portfolio</a></li>
+                            <li><a href="#process">Design Process</a></li>
+                            <li><a href="#contact">Contact Concierge</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Luxury Residential</a></li>
+                            <li><a href="#services">Commercial Architecture</a></li>
+                            <li><a href="#services">Executive Offices</a></li>
+                            <li><a href="#services">Bespoke Millwork & Lighting</a></li>
+                            <li><a href="#services">3D Visualization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <p>Receive exclusive insights, private event invitations, and design trends.</p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing.');">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 AURA Studio. All Rights Reserved. Crafted with precision.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /Main Container -->
+
+    <!-- WhatsApp Quick Button -->
+    <a href="https://wa.me/18005552872" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Fullscreen Modal / Page -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body-content">
+                <!-- Dynamically injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Locomotive Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
